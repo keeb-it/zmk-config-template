@@ -6,6 +6,9 @@ if SHIELD_SHIFTPAD
 config ZMK_KEYBOARD_NAME
     default "shiftpad"
 
+config SPI
+    default y
+
 if ZMK_DISPLAY
 
 config I2C
