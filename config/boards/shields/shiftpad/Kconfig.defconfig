@@ -1,0 +1,6 @@
+if SHIELD_SHIFTPAD
+
+config ZMK_KEYBOARD_NAME
+    default "shiftpad"
+
+endif
