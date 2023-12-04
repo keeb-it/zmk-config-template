@@ -1,6 +1,22 @@
+# Copyright (c) 2020 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
 if SHIELD_SHIFTPAD
 
 config ZMK_KEYBOARD_NAME
     default "shiftpad"
+
+if ZMK_DISPLAY
+
+config I2C
+    default y
+
+config SSD1306
+    default y
+
+config SSD1306_REVERSE_MODE
+    default y
+
+endif # ZMK_DISPLAY
 
 endif

@@ -14,8 +14,8 @@
         default_layer {
             label = "default";
             bindings = <
-                &kp A  &kp B  &kp C
-                &kp N1 &kp N2 &kp N3
+                &bootloader &kp B  &kp C
+                &kp N1      &kp N2 &kp N3
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
