@@ -3,13 +3,12 @@
 &xiao_spi {
     status = "okay";
     cs-gpios = <&xiao_d 7 GPIO_ACTIVE_LOW>;
-    shift_reg: 595@0 {
+    shift_reg: 74HC595@0 {
         compatible = "zmk,gpio-595";
         status = "okay";
         gpio-controller;
         spi-max-frequency = <200000>;
         reg = <0>;
-        label = "4HC595";
         #gpio-cells = <2>;
         ngpios = <8>;
     };
@@ -44,7 +43,6 @@
 
     kscan0: kscan_0 {
         compatible = "zmk,kscan-gpio-matrix";
-        label = "KSCAN";
         diode-direction = "col2row";
 
         col-gpios
@@ -69,9 +67,8 @@ RC(1,0) RC(1,1) RC(1,2)
         >;
     };
 
-    left_encoder: encoder_left {
+    left_encoder: left_encoder {
         compatible = "alps,ec11";
-        label = "LEFT_ENCODER";
         a-gpios = <&xiao_d 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&xiao_d 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         steps = <80>;

@@ -20,10 +20,6 @@ config SSD1306
 config SSD1306_REVERSE_MODE
     default y
 
-endif # ZMK_DISPLAY
-
-if LVGL
-
 config LV_Z_VDB_SIZE
     default 64
 
@@ -37,6 +33,6 @@ choice LV_COLOR_DEPTH
     default LV_COLOR_DEPTH_1
 endchoice
 
-endif # LVGL
+endif # ZMK_DISPLAY
 
 endif

@@ -12,7 +12,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            label = "default";
+            display-name = "default";
             bindings = <
                 &bootloader &kp B  &kp C
                 &kp N1      &kp N2 &kp N3
